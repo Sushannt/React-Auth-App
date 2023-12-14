@@ -17,16 +17,16 @@ const SignUpPage = () => {
       <h2 className="text-md font-semibold">Please provide your details</h2>
       <form action="#" className="flex flex-col gap-y-4 mt-5">
         <OAuthComponent className="w-[8%] md:w-[5%]" />
-        <section className="flex justify-center gap-x-4 text-slate-400">
-          <div>----------------</div>
-          <div>OR</div>
-          <div>----------------</div>
-        </section>
+
+        <span className="relative flex justify-center">
+          <div className="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75"></div>
+
+          <span className="relative z-10 bg-white px-6 text-slate-400">OR</span>
+        </span>
         <EmailComponent />
         <PasswordComponent label="Password" />
         {password.value !== "" && <PasswordStrengthVisualizer />}
-
-        <div>
+        <fieldset>
           <Label value="Repeat Password" />
           <TextInput
             sizing="md"
@@ -40,7 +40,7 @@ const SignUpPage = () => {
               "gray"
             }
           />
-        </div>
+        </fieldset>
 
         <Button type="primary" size="md" width="full">
           Continue

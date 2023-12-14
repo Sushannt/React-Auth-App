@@ -13,7 +13,7 @@ const SignInPage = () => {
       <form action="#" className="flex flex-col gap-y-4 mt-5">
         <EmailComponent />
         <PasswordComponent />
-        <div className="flex justify-between pb-4 text-sm">
+        <section className="flex justify-between pb-4 text-sm">
           <span>
             <label htmlFor="checkbox">
               <CheckBox
@@ -29,7 +29,7 @@ const SignInPage = () => {
               Forgot Password?
             </a>
           </span>
-        </div>
+        </section>
         <Button type="primary" size="md" width="full">
           Sign In
         </Button>

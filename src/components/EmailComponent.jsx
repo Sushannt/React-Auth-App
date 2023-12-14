@@ -7,7 +7,7 @@ const EmailComponent = () => {
   const { email, handleEmail } = useContext(AppStateContext);
 
   return (
-    <div>
+    <fieldset>
       <Label value="Email address" />
       <TextInput
         sizing="md"
@@ -25,7 +25,7 @@ const EmailComponent = () => {
         }
         iconPosition="right"
       />
-    </div>
+    </fieldset>
   );
 };
 

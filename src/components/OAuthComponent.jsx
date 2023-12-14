@@ -5,7 +5,7 @@ import googleIcon from "../assets/google-icon.svg";
 
 const OAuthComponent = ({ className }) => {
   return (
-    <div className="flex flex-col pt-5 gap-4">
+    <fieldset className="flex flex-col pt-5 gap-4">
       <Button width="full">
         <img src={googleIcon} className={className} alt="Google icon" />
         &nbsp;Sign in with Google
@@ -14,7 +14,7 @@ const OAuthComponent = ({ className }) => {
         <img src={appleIcon} className={className} alt="apple icon" />
         &nbsp;Sign in with Apple
       </Button>
-    </div>
+    </fieldset>
   );
 };
 

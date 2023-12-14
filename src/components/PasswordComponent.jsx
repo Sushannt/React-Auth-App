@@ -8,7 +8,7 @@ const PasswordComponent = () => {
     useContext(AppStateContext);
 
   return (
-    <div>
+    <fieldset>
       <Label value="Password" />
       <TextInput
         sizing="md"
@@ -37,7 +37,7 @@ const PasswordComponent = () => {
         addonPosition={password.value === "" || "right"}
         addonStyle="rounded-r-md border-l-0"
       />
-    </div>
+    </fieldset>
   );
 };
 
